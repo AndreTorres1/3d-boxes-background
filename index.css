@@ -1,0 +1,26 @@
+.images-container {
+    display: flex;
+}
+
+.image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 200px;
+    color: #fff;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: flex 0.7s ease-in;
+    width: calc(50% - 20px);
+}
+
+.image.active {
+    flex: 2;
+}
+
+.image:not(.active):hover {
+    flex: 0.5;
+}
